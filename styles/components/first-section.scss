@@ -1,0 +1,49 @@
+// First section Hero Banner styles //
+
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  @media screen and (max-width: $mobile-screen) {
+    height: 400px;
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    @media screen and (max-width: $mobile-screen) {
+      object-fit: cover;
+      position: relative;
+    }
+  }
+}
+
+.heading {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  bottom: 0;
+  padding: $xxl-spacing 0;
+  @media screen and (max-width: $mobile-screen) {
+    position: relative;
+    margin-top: 18px;
+    padding: 0px $sm-heading;
+    max-width: 335px;
+    height: 26px;
+  }
+  h2 {
+    color: $white;
+    font-family: $corpo-regular-font;
+    font-size: $lg-heading;
+
+    @media screen and (max-width: $mobile-screen) {
+      font-size: $sm-heading;
+    }
+  }
+}

@@ -1,0 +1,80 @@
+/* main page styles */
+
+.txt-container {
+  @include flex-col-align-center;
+  padding: 0 $xxs-spacing;
+}
+
+.over-the-moon,
+.store {
+  @include flex-col-align-center;
+  padding: 0 $xxs-spacing;
+
+  .title {
+    gap: $xxxs-spacing;
+    margin: calc($xxl-spacing + $sm-spacing) 0;
+
+    h1 {
+      color: $secondary-color;
+    }
+
+    p {
+      margin-bottom: $xxxs-spacing;
+    }
+  }
+
+  @media screen and (max-width: $mobile-screen) {
+    .title {
+      margin: calc($lg-spacing + $xs-spacing) 0;
+    }
+
+    & {
+      margin-bottom: calc($lg-spacing + $md-spacing);
+    }
+
+    #over-the-moon-1-chanel {
+      background-image: url("./public/giedre-mobile.jpg");
+    }
+
+    #over-the-moon-2-chanel {
+      background-image: url("./public/imari-mobile.jpg");
+    }
+  }
+}
+
+.over-the-moon {
+  margin-bottom: calc($xxl-spacing + $lg-spacing);
+
+  #over-the-moon-1-chanel {
+    background-image: url("./public/giedre.jpg");
+  }
+}
+
+.store {
+  margin-bottom: calc($xxl-spacing + $sm-spacing);
+
+  #over-the-moon-2-chanel {
+    background-image: url("./public/imari.jpg");
+  }
+}
+
+.slider-section {
+  @include flex-col-align-center;
+  width: 100%;
+  gap: $lg-spacing;
+  margin-bottom: calc($xxl-spacing + $lg-spacing);
+  padding: 0 $xxs-spacing;
+
+  @media screen and (max-width: $mobile-screen) {
+    gap: $md-spacing;
+    margin-bottom: calc($lg-spacing + $md-spacing);
+  }
+}
+
+.footer-txt {
+  padding: 0 116px;
+
+  @media screen and (max-width: $mobile-screen) {
+    padding: 0 $xxs-spacing;
+  }
+}

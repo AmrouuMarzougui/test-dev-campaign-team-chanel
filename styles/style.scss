@@ -1,0 +1,31 @@
+/* partials */
+@import "./fonts/fonts.scss", "./partials/mixins.scss",
+  "./partials/typography.scss", "./partials/variables.scss";
+
+/* Components */
+@import "./components/buttons.scss", "./components/first-section.scss",
+  "./components/images.scss", "./components/slider.scss";
+
+/* pages */
+@import "./pages/main.scss";
+
+/* Main */
+/* Reset and Remove all transitions from all elements */
+.body-container * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
+/* Set margin, padding, and box-sizing for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Set background color and hide horizontal scrollbar */
+body {
+  background-color: $primary-color;
+  overflow-x: hidden;
+}

@@ -1,0 +1,30 @@
+// Buttons and links styles
+
+.CTA-button,
+.CTA-link {
+  transition: all ease-in-out 0.3s;
+  color: $white;
+}
+
+.CTA-button {
+  width: auto;
+  border: solid 1px $white;
+  padding: 16px 21px;
+
+  &:hover {
+    background-color: $white;
+    color: $primary-color;
+  }
+}
+
+.CTA-link {
+  height: auto;
+  width: auto;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 2px solid $primary-color;
+
+  &:hover {
+    border-bottom-color: $white;
+  }
+}

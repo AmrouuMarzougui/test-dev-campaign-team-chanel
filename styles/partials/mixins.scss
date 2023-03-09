@@ -1,0 +1,21 @@
+/* mixins*/
+
+@mixin flex-col-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@mixin flex-row-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+@mixin flex-col-align-center {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}

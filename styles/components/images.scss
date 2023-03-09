@@ -1,0 +1,23 @@
+// images styles
+
+.parallax-image {
+  width: 100%;
+  height: 792px;
+  min-height: 792px;
+  max-width: 868px;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 668px 792px;
+  background-repeat: no-repeat;
+  z-index: -1;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  @media screen and (max-width: $mobile-screen) {
+    height: 396px;
+    min-height: 335px;
+    background-size: 335px 396px;
+  }
+}

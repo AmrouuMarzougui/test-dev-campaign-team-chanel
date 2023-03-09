@@ -1,0 +1,131 @@
+// slider styles
+
+.slider-container {
+  @include flex-col-center;
+  width: 100%;
+  gap: 18px;
+  overflow: hidden;
+
+  @media screen and (max-width: $mobile-screen) {
+    position: relative;
+  }
+
+  .slider-content {
+    @include flex-row-center;
+
+    @media screen and (max-width: $mobile-screen) {
+      width: 100%;
+      position: relative;
+    }
+  }
+
+  .indicator-container {
+    @include flex-row-center;
+    gap: 14px;
+  }
+}
+
+.slider-item-container {
+  @include flex-row-center;
+  position: relative;
+  width: 100%;
+
+  .slider-item {
+    @include flex-row-center;
+    gap: 80px;
+
+    img {
+      width: 487px;
+      height: 649px;
+      object-fit: contain;
+
+      @media screen and (max-width: $mobile-screen) {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    @media screen and (max-width: $mobile-screen) {
+      width: 100%;
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+
+  #slider-1 {
+    transition: all ease-in-out 0.5s;
+  }
+
+  #slider-2 {
+    position: absolute;
+    opacity: 0;
+    transform: translateX(40%);
+    transition: all ease-in-out 0.5s;
+  }
+
+  @media screen and (max-width: $mobile-screen) {
+    width: 100%;
+    align-items: flex-end;
+  }
+}
+
+.slider-txt-container {
+  width: 384px;
+
+  h2 {
+    white-space: pre-line;
+    margin-bottom: 9px;
+  }
+
+  p {
+    white-space: pre-line;
+    margin-bottom: 18px;
+
+    .uppercase {
+      text-transform: uppercase;
+    }
+  }
+}
+
+.left-arrow,
+.right-arrow {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  z-index: 100;
+}
+
+.left-arrow {
+  border-left: solid 1px $white;
+  border-bottom: solid 1px $white;
+  transform: rotate(45deg);
+  opacity: 0;
+  margin-right: 73px;
+
+  @media screen and (max-width: $mobile-screen) {
+    position: absolute;
+    left: 39%;
+    margin-right: 73px;
+    width: 8px;
+    height: 8px;
+    bottom: -31px;
+  }
+}
+
+.right-arrow {
+  border-right: solid 1px $white;
+  border-bottom: solid 1px $white;
+  transform: rotate(-45deg);
+  margin-left: 22px;
+
+  @media screen and (max-width: $mobile-screen) {
+    position: absolute;
+    left: 59%;
+    margin-left: 0;
+    width: 8px;
+    height: 8px;
+    bottom: -31px;
+  }
+}
