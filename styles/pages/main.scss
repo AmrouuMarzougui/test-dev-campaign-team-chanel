@@ -1,16 +1,16 @@
 /* main page styles */
 
-.txt-container {
+.ch-txt-container {
   @include flex-col-align-center;
   padding: 0 $xxs-spacing;
 }
 
-.over-the-moon,
-.store {
+.ch-over-the-moon,
+.ch-store {
   @include flex-col-align-center;
   padding: 0 $xxs-spacing;
 
-  .title {
+  .ch-title {
     gap: $xxxs-spacing;
     margin: calc($xxl-spacing + $sm-spacing) 0;
 
@@ -24,7 +24,7 @@
   }
 
   @media screen and (max-width: $mobile-screen) {
-    .title {
+    .ch-title {
       margin: calc($lg-spacing + $xs-spacing) 0;
     }
 
@@ -42,7 +42,7 @@
   }
 }
 
-.over-the-moon {
+.ch-over-the-moon {
   margin-bottom: calc($xxl-spacing + $lg-spacing);
 
   #over-the-moon-1-chanel {
@@ -50,7 +50,7 @@
   }
 }
 
-.store {
+.ch-store {
   margin-bottom: calc($xxl-spacing + $sm-spacing);
 
   #over-the-moon-2-chanel {
@@ -58,7 +58,7 @@
   }
 }
 
-.slider-section {
+.ch-slider-section {
   @include flex-col-align-center;
   width: 100%;
   gap: $lg-spacing;
@@ -71,7 +71,7 @@
   }
 }
 
-.footer-txt {
+.ch-footer-txt {
   padding: 0 116px;
 
   @media screen and (max-width: $mobile-screen) {

@@ -1,9 +1,11 @@
 // Import styles
 import "./styles/style.scss";
 
-// Wait for the page to load before removing the "body-container" class from the body.
+// Wait for the page to load before removing the "ch-body-container" class from the body.
 window.addEventListener("load", () => {
-  document.getElementsByTagName("body")[0].classList.remove("body-container");
+  document
+    .getElementsByTagName("body")[0]
+    .classList.remove("ch-body-container");
 });
 
 // Add parallax effect to images
@@ -38,7 +40,7 @@ parallaxElements.forEach((element) => addParallaxScrollListener(element));
 
 //  Slider
 
-const sliderItems = document.querySelectorAll(".slider-item");
+const sliderItems = document.querySelectorAll(".ch-slider-item");
 const sliderIndicator = document.getElementById("indicator-txt");
 const rightArrow = document.getElementById("right-arrow");
 const leftArrow = document.getElementById("left-arrow");
@@ -116,7 +118,7 @@ rightArrow.addEventListener("click", handleRightArrowClick);
 const slider1 = document.querySelector("#slider-1");
 initializeSlider(
   slider1,
-  ".slider-item",
+  ".ch-slider-item",
   "#left-arrow",
   "#right-arrow",
   "#indicator-txt"
@@ -125,7 +127,7 @@ initializeSlider(
 const slider2 = document.querySelector("#slider-2");
 initializeSlider(
   slider2,
-  ".slider-item",
+  ".ch-slider-item",
   "#left-arrow",
   "#right-arrow",
   "#indicator-txt"

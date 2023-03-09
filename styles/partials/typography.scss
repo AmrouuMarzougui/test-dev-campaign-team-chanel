@@ -3,7 +3,7 @@
 @import "../fonts/fonts.scss";
 @import "./variables.scss";
 
-.bg-font {
+.ch-bg-font {
   font-family: $corpo-regular-font;
   font-size: $xl-heading;
   font-weight: 600;
@@ -17,7 +17,7 @@
   }
 }
 
-.md-font {
+.ch-md-font {
   font-family: $corpo-regular-font;
   font-size: $lg-heading;
   font-weight: 600;
@@ -31,7 +31,7 @@
   }
 }
 
-.paragraph-font {
+.ch-paragraph-font {
   font-family: $helvetica-font;
   font-size: $xs;
   color: $light-white;
@@ -40,7 +40,7 @@
   width: 100%;
 }
 
-.sm-font {
+.ch-sm-font {
   font-family: $helvetica-font;
   font-size: $xs;
   color: $secondary-color;
@@ -51,7 +51,7 @@
   padding: 0 116px;
 }
 
-.xs-font {
+.ch-xs-font {
   font-family: $corpo-regular-font;
   font-size: $xxs;
   color: $light-white;
@@ -60,7 +60,7 @@
   width: 100%;
 }
 
-.CTA-font {
+.ch-CTA-font {
   font-family: $corpo-regular-font;
   font-size: $xxxs;
   color: $light-white;

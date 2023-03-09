@@ -1,36 +1,36 @@
 // slider styles
 
-.slider-container {
+.ch-slider-container {
   @include flex-col-center;
   width: 100%;
   gap: 18px;
   overflow: hidden;
 
-  @media screen and (max-width: $mobile-screen) {
+  @media screen and (max-width: $tablet-screen) {
     position: relative;
   }
 
-  .slider-content {
+  .ch-slider-content {
     @include flex-row-center;
 
-    @media screen and (max-width: $mobile-screen) {
+    @media screen and (max-width: $tablet-screen) {
       width: 100%;
       position: relative;
     }
   }
 
-  .indicator-container {
+  .ch-indicator-container {
     @include flex-row-center;
     gap: 14px;
   }
 }
 
-.slider-item-container {
+.ch-slider-item-container {
   @include flex-row-center;
   position: relative;
   width: 100%;
 
-  .slider-item {
+  .ch-slider-item {
     @include flex-row-center;
     gap: 80px;
 
@@ -39,13 +39,13 @@
       height: 649px;
       object-fit: contain;
 
-      @media screen and (max-width: $mobile-screen) {
+      @media screen and (max-width: $tablet-screen) {
         width: 100%;
         height: auto;
       }
     }
 
-    @media screen and (max-width: $mobile-screen) {
+    @media screen and (max-width: $tablet-screen) {
       width: 100%;
       flex-direction: column;
       gap: 30px;
@@ -63,13 +63,13 @@
     transition: all ease-in-out 0.5s;
   }
 
-  @media screen and (max-width: $mobile-screen) {
+  @media screen and (max-width: $tablet-screen) {
     width: 100%;
     align-items: flex-end;
   }
 }
 
-.slider-txt-container {
+.ch-slider-txt-container {
   width: 384px;
 
   h2 {
@@ -104,7 +104,7 @@
   opacity: 0;
   margin-right: 73px;
 
-  @media screen and (max-width: $mobile-screen) {
+  @media screen and (max-width: $tablet-screen) {
     position: absolute;
     left: 39%;
     margin-right: 73px;
@@ -120,7 +120,7 @@
   transform: rotate(-45deg);
   margin-left: 22px;
 
-  @media screen and (max-width: $mobile-screen) {
+  @media screen and (max-width: $tablet-screen) {
     position: absolute;
     left: 59%;
     margin-left: 0;

@@ -1,12 +1,12 @@
 // Buttons and links styles
 
-.CTA-button,
-.CTA-link {
+.ch-CTA-button,
+.ch-CTA-link {
   transition: all ease-in-out 0.3s;
   color: $white;
 }
 
-.CTA-button {
+.ch-CTA-button {
   width: auto;
   border: solid 1px $white;
   padding: 16px 21px;
@@ -17,7 +17,7 @@
   }
 }
 
-.CTA-link {
+.ch-CTA-link {
   height: auto;
   width: auto;
   text-decoration: none;
